@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "declaration": true,
+    "outDir": "./dist",
+    "emitDeclarationOnly": false,
+    "removeComments": true
+  },
+  "exclude": ["node_modules", "dist"],
+  "include": ["./lib/index.ts"]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "lb3-easy-passport",
+  "version": "1.0.0",
+  "description": "Incorporate Passport.JS into Loopback 3 for user authentication",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "babel lib/index.ts --out-dir dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matt Moreno",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3",
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/jest": "^25.1.4",
+    "@types/loopback": "^3.2.9",
+    "@types/mongodb": "^3.6.16",
+    "@types/node": "^13.9.5",
+    "@typescript-eslint/eslint-plugin": "^2.25.0",
+    "@typescript-eslint/parser": "^2.25.0",
+    "babel-jest": "^25.2.3",
+    "eslint": "^6.8.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^25.2.3",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.2"
+  }
+}

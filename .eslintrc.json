@@ -1,0 +1,40 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "env": {
+    "es6": true,
+    "browser": true,
+    "jest": true,
+    "node": true
+  },
+  "rules": {
+    "@typescript-eslint/no-inferrable-types": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-member-accessibility": "off",
+    "@typescript-eslint/indent": "off",
+    "@typescript-eslint/member-delimiter-style": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {"argsIgnorePattern": "^_"}
+    ],
+    "max-len": [
+      "error",
+      {
+        "ignoreComments": true,
+        "ignoreStrings": true,
+        "code": 120,
+        "tabWidth": 2
+      }
+    ],
+    "eqeqeq": ["error", "always"],
+    "no-else-return": ["error", {"allowElseIf": false}],
+    "prefer-const": "off"
+  }
+}
